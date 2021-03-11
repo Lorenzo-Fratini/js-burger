@@ -21,7 +21,7 @@ calculate.addEventListener("click", function(){
       }
     }
 
-    var coupons = ['123asd', '456qwe', '789zxc'];
+    var coupons = ['123qwe', '456rty', '789uio'];
     var burgerCoupon = document.getElementById('burger-coupon').value;
 
     for (i=0;i<coupons.length;i++){

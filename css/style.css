@@ -100,7 +100,7 @@ button:focus {
 
 #burger-coupon {
   width: 70%;
-  height: 30px;
+  padding: 10px;
   border: none;
   margin: 0 0 0 20px;
   background: #fdf5e4;
