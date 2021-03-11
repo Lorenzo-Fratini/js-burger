@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="cont">
+        <header>
+            <h1>Create Your Burger</h1>
+            <img src="img/burger-top.png" alt="">
+        </header>
+        <main>
+          <input id="burger-name" name="burger-name" type="text" placeholder="Name Your Burger">
+          <h2>Ingredients</h2>
+          <ul>
+              <li>
+                  <img src="img/cheese.svg">
+                  <h3>Formaggio 2€</h3>
+                  <input id="formaggio" class="ingred" type="checkbox" data-price="2">
+              </li>
+              <li>
+                  <img src="img/fried-egg.svg">
+                  <h3>Uova 3€</h3>
+                  <input id="uova" class="ingred" type="checkbox" data-price="3">
+              </li>
+              <li>
+                  <img src="img/mustard.svg">
+                  <h3>Mostarda 4€</h3>
+                  <input id="mostarda" class="ingred" type="checkbox" data-price="4">
+              </li>
+              <li>
+                  <img src="img/tomato.svg">
+                  <h3>Pomodoro 1€</h3>
+                  <input id="pomodoro" class="ingred" type="checkbox" data-price="1">
+              </li>
+              <li>
+                  <img src="img/lettuce.svg">
+                  <h3>Lattuga 6€</h3>
+                  <input id="lattuga" class="ingred" type="checkbox" data-price="6">
+              </li>
+              <li>
+                  <img src="img/ketchup.svg">
+                  <h3>Ketchup 1€</h3>
+                  <input id="ketchup" class="ingred" type="checkbox" data-price="1">
+              </li>
+          </ul>
+          <div class="coupon-cont">
+              <label for="coupon">Discount coupon:</label>
+              <input id="burger-coupon" name="coupon" type="text" placeholder="Coupon">
+          </div>
+          <div class="calculate-cont">
+            <button id="calculate">Calcola prezzo</button>
+          </div>
+        </main>
+        <footer>
+          <h2>Prezzo</h2>
+          <h2>
+            <span>€</span>
+            <span id="price">10</span>
+          </h2>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
