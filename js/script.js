@@ -49,9 +49,20 @@ for (var i=0;i<ingredients.length;i++){
 
   ingredient.addEventListener('click', function(){
     var clickedIng = this;
-    var clickedChild = clickedIng.children;
-    var clickedCheckbox = clickedChild[2];
+    var clickedCheckbox = clickedIng.children[2];
 
     clickedCheckbox.checked = !clickedCheckbox.checked;
+
+    var falseCheckbox = clickedIng.children[3];
+
+    var falseUnchecked = falseCheckbox.classList.contains('fa-square');
+
+    if (falseUnchecked){
+      falseCheckbox.className = 'far' + ' fa-check-square';
+    } else {
+      falseCheckbox.className = 'far' + ' fa-square';
+    }
+
   });
+
 }
