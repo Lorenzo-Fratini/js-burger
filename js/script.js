@@ -22,12 +22,12 @@ calculate.addEventListener("click", function(){
     }
 
     var coupons = ['123qwe', '456rty', '789uio'];
-    var burgerCoupon = document.getElementById('burger-coupon').value;
+    var userCoupon = document.getElementById('burger-coupon').value;
 
     for (i=0;i<coupons.length;i++){
       var coupon = coupons[i];
 
-      if (burgerCoupon == coupon){
+      if (userCoupon == coupon){
         finalPrice -= finalPrice/5;
       }
     }
@@ -36,3 +36,18 @@ calculate.addEventListener("click", function(){
     price.innerHTML = finalPrice;
   }
 });
+
+
+var ingredients = document.getElementsByTagName('li');
+
+for (var i=0;i<ingredients.length;i++){
+  var ingredient = ingredients[i]
+
+  ingredient.addEventListener('click', function(){
+    var clickedIng = this;
+    var clickedChild = clickedIng.children;
+    var clickedCheckbox = clickedChild[2];
+
+    clickedCheckbox.checked = !clickedCheckbox.checked;
+  });
+}
