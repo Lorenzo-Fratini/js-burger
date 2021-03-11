@@ -86,6 +86,10 @@ button:focus {
   outline: none;
 }
 
+input[type="checkbox"]{
+  cursor: pointer;
+}
+
 #burger-name {
   width: 50%;
   height: 50px;

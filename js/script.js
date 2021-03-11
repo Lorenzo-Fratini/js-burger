@@ -4,7 +4,7 @@ calculate.addEventListener("click", function(){
 
   var burgerName = document.getElementById('burger-name').value;
 
-  if (burgerName.length<0) {
+  if (burgerName.length<1) {
     alert('Inserire nome');
 
   } else {
@@ -24,13 +24,17 @@ calculate.addEventListener("click", function(){
     var coupons = ['123qwe', '456rty', '789uio'];
     var userCoupon = document.getElementById('burger-coupon').value;
 
-    for (i=0;i<coupons.length;i++){
-      var coupon = coupons[i];
-
-      if (userCoupon == coupon){
-        finalPrice -= finalPrice/5;
-      }
+    if (coupons.includes(userCoupon)){
+      finalPrice -= finalPrice/5;
     }
+
+    // for (i=0;i<coupons.length;i++){
+    //   var coupon = coupons[i];
+    //
+    //   if (userCoupon == coupon){
+    //     finalPrice -= finalPrice/5;
+    //   }
+    // }
 
     var price = document.getElementById('price');
     price.innerHTML = finalPrice;
